@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer1{
+	background-color: #1F1F1F;
+	height: 300px;
+	padding: 70px 12%;
+}
+
+.row_footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.f11{
+	float: left;
+	width: 17%;
+}
+
+.f12{
+	float: left;
+	width: 26%;
+	color: white;
+}
+
+.f12 a{
+	color: grey;
+	text-decoration: none;
+}
+
+.f12 a:hover{
+	color: #2B98FA;
+}
+
+.f13{
+	float: left;
+	width: 27%;
+
+}
+
+.f13 a{
+	color: grey;
+	text-decoration: none;
+}
+
+.f13 a:hover{
+	color: #2B98FA;
+}
+
+.f14{
+	float: left;
+	width: 30%;
+}
+
+.footer2{
+	background-color: black;
+	text-align: center;
+	height: 80px;
+	color: white;
+	padding: 20px;
+}

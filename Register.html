@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docmed-Register</title>
+	<link href="css/css-register.css" rel="stylesheet" type="text/css">
+	<link href="css/css-navbar.css" rel="stylesheet" type="text/css">
+	<link href="css/css-footer.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="nav-bar">
+		<ul>
+			<a href="Home.html"><li class="logo"><img src="image/logo.png" style="height: 50px; margin-right: 150px;"></li></a>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Book.html">Health-Care Book</a></li>
+			<li><a href="Chamber.html">Chamber-Service Book</a></li>
+			<li class="login"><a class="active" href="Login.html">Login</a></li>
+		</ul>
+	</div>
+
+	<div class="register-form">
+		<form id="regForm" action="/action_page.php">
+		  <h1>Register</h1>
+		  <!-- One "tab" for each step in the form: -->
+		  <div class="tab">Name:
+			<p><input type="text" placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+			<p><input type="text" placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+			  Already have an account? <a href="Login.html">Login</a>
+		  </div>
+		  <div class="tab">Contact Info:
+			<p><input type="text" placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+			<p><input type="text" placeholder="Phone number..." oninput="this.className = ''" name="phone"></p>
+		  </div>
+		  <div class="tab">
+			<p>Please select your gender:</p>
+			  <input type="radio" id="male" name="gender" value="male">
+			  <label for="male">Male</label><br>
+			  <input type="radio" id="female" name="gender" value="female">
+			  <label for="female">Female</label><br><br>
+			Birthday:
+			<p><input type="text" placeholder="date" oninput="this.className = ''" name="dd"></p>
+			<p><input type="text" placeholder="month" oninput="this.className = ''" name="nn"></p>
+			<p><input type="text" placeholder="year" oninput="this.className = ''" name="yyyy"></p>
+		  </div>
+		  <div class="tab">Login Info:
+			<p><input type="text" placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+			<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+			<p><input placeholder="Repeat Password..." oninput="this.className = ''" name="rpword" type="password"></p>
+		  </div>
+		  <div style="overflow:auto;">
+			<div style="float:right;">
+			  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+			  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		  </div>
+		  <!-- Circles which indicates the steps of the form: -->
+		  <div style="text-align:center;margin-top:40px;">
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+		  </div>
+		</form>
+	</div>
+	
+	<div class="footer1">
+		<div class="row_footer">
+			<div class="f11">
+				<img src="image/footer_logo.png">
+			</div>
+			<div class="f12">
+				<p style="color: white; font-size: 20px;">Polyclinic</p>
+				<p style="color:grey; font-size: 15px;">
+					<a href="#polyclinic">Children's Polyclinic</a><br>
+					<a href="#polyclinic">Dental Specialist Polyclinic</a><br>
+					<a href="#polyclinic">Internal Medicine Polyclinic</a><br>
+					<a href="#polyclinic">The Gynecology and Obstetrics Clinic</a><br>
+					<a href="#polyclinic">General Practitioners</a><br>
+				</p>
+			</div>
+			<div class="f13">
+				<p style="color: #1F1F1F; font-size: 20px;">Polyclinic</p>
+				<p style="color:grey; font-size: 15px;">
+					<a href="#polyclinic">Ear Nose Throat (ENT) Polyclinic</a><br>
+					<a href="#polyclinic">Home Care</a><br>
+					<a href="#polyclinic">Laboratory</a><br>
+					<a href="#polyclinic">Medical Check-up</a><br>
+					<a href="#polyclinic">The Radiology Polyclinic</a><br>
+				</p>
+			</div>
+			<div class="f14">
+				<p style="color: white; font-size: 20px;">Address</p>
+				<p style="color:grey; font-size: 15px;">
+					Jalan Pasir Kaliki No.25-27, Kebon Jeruk, Andir, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181<br>
+					+62 123 456 7890<br>
+					docmed.clinic@gmail.com
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<p>Copyright ©2020 All rights reserved | This website is made by David Permana - 2301851710</p>
+	</div>
+	
+	<script src="server/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+
+body {
+	z-index: 1;
+	margin:0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 12%;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 2;
+}
+
+li {
+  	float: left;
+}
+
+.logo{
+	float: left;
+	padding: 25px 10px;
+}
+
+li a{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+	margin: 28px 0;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+	border-radius: 10px;
+}
+
+li a.active {
+  color: white;
+  background-color: #1A8FF8;
+	border-radius: 10px;
+}
+
+.login{
+	float: right;
+	right: 12%;
+	
+}

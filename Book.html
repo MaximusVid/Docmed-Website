@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docmed-HCBook</title>
+	<link href="css/css-book.css" rel="stylesheet" type="text/css">
+	<link href="css/css-navbar.css" rel="stylesheet" type="text/css">
+	<link href="css/css-footer.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="nav-bar">
+		<ul>
+			<a href="Home.html"><li class="logo"><img src="image/logo.png" style="height: 50px; margin-right: 150px;"></li></a>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a  class="active" href="Book.html">Health-Care Book</a></li>
+			<li><a href="Chamber.html">Chamber-Service Book</a></li>
+			<li class="login"><a href="Login.html">Login</a></li>
+		</ul>
+	</div>
+
+	<div class="register-form">
+		<form id="regForm" action="/action_page.php">
+		  <h1>Health Care<br>-Booking-</h1>
+		  <!-- One "tab" for each step in the form: -->
+		  <div class="tab">
+			<p><input type="text" placeholder="Full name" oninput="this.className = ''" name="fname"></p>
+			<p>
+				<select id="polyclinic" name="polyclinic" required>
+					<option value="" disabled selected>Polyclinic</option>
+					<option value="Children's Polyclinic">Children's Polyclinic</option>
+					<option value="Dental Specialist Polyclinic">Dental Specialist Polyclinic</option>
+					<option value="Internal Medicine Polyclinic">Internal Medicine Polyclinic</option>
+					<option value="The Gynecology and Obstetrics Clinic">The Gynecology and Obstetrics Clinic</option>
+					<option value="General Practitioners">General Practitioners</option>
+					<option value="Ear Nose Throat (ENT) Polyclinic">Ear Nose Throat (ENT) Polyclinic</option>
+					<option value="Home Care">Home Care</option>
+					<option value="Laboratory">Laboratory</option>
+					<option value="Medical Check-up">Medical Check-up</option>
+					<option value="The Radiology Polyclinic">The Radiology Polyclinic</option>
+				</select>
+			</p>
+		  </div>
+		  <div class="tab">
+			<input type="date" name="txtDate" value="" size="20" maxlength="20">
+			<p><input type="text" placeholder="Age" oninput="this.className = ''" name="phone"></p>
+			<p><input type="text" placeholder="Phone number" oninput="this.className = ''" name="phone"></p>
+		  </div>
+		  <div class="tab">Description about your disease:
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:120px" required></textarea>
+		  </div>
+		  <div style="overflow:auto;">
+			<div style="float:right;">
+			  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+			  <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+			</div>
+		  </div>
+		  <!-- Circles which indicates the steps of the form: -->
+		  <div style="text-align:center;margin-top:40px;">
+			<span class="step"></span>
+			<span class="step"></span>
+			<span class="step"></span>
+		  </div>
+		</form>
+	</div>
+	
+	<div class="footer1">
+		<div class="row_footer">
+			<div class="f11">
+				<img src="image/footer_logo.png">
+			</div>
+			<div class="f12">
+				<p style="color: white; font-size: 20px;">Polyclinic</p>
+				<p style="color:grey; font-size: 15px;">
+					<a href="#polyclinic">Children's Polyclinic</a><br>
+					<a href="#polyclinic">Dental Specialist Polyclinic</a><br>
+					<a href="#polyclinic">Internal Medicine Polyclinic</a><br>
+					<a href="#polyclinic">The Gynecology and Obstetrics Clinic</a><br>
+					<a href="#polyclinic">General Practitioners</a><br>
+				</p>
+			</div>
+			<div class="f13">
+				<p style="color: #1F1F1F; font-size: 20px;">Polyclinic</p>
+				<p style="color:grey; font-size: 15px;">
+					<a href="#polyclinic">Ear Nose Throat (ENT) Polyclinic</a><br>
+					<a href="#polyclinic">Home Care</a><br>
+					<a href="#polyclinic">Laboratory</a><br>
+					<a href="#polyclinic">Medical Check-up</a><br>
+					<a href="#polyclinic">The Radiology Polyclinic</a><br>
+				</p>
+			</div>
+			<div class="f14">
+				<p style="color: white; font-size: 20px;">Address</p>
+				<p style="color:grey; font-size: 15px;">
+					Jalan Pasir Kaliki No.25-27, Kebon Jeruk, Andir, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181<br>
+					+62 123 456 7890<br>
+					docmed.clinic@gmail.com
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+		<p>Copyright ©2020 All rights reserved | This website is made by David Permana - 2301851710</p>
+	</div>
+	
+	<script src="server/book.js"></script>
+</body>
+</html>

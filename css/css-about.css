@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container{
+	margin-top: 100px;
+	padding: 75px 12%;
+	height: 750px;
+	background-color: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 125px 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.front
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .back
+    {
+      position: absolute;
+      top: 275px;
+      left: 425px;
+    }
+
+hr{
+	height: 2px;
+	background-color: #5DB2FF;
+	border: none;
+	float: left;
+	color: #5DB2FF;
+	margin-top: 0;
+	width: 8%;
+}
